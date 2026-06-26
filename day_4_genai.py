@@ -206,7 +206,7 @@ footer{
     transition:.35s;
 
     min-height:420px;
-
+    color: black;
 }
 
 .card:hover{
