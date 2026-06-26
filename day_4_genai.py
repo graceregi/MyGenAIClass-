@@ -87,7 +87,7 @@ system_instruction="""You are CarSense AI, an expert Used Car Advisor with over 
         if user has not provided enough information, ask for clarification before making recommendations.
         if anything other than cars is asked tell them  that you are a used car advisor and can only provide information about used cars.
         Dont give any other information other than  cars."""
-robo = genai.Client(api_key="MY_API")
+robo = genai.Client(api_key=st.secrets["MY_API"])
 mychat = robo.chats.create(
         model="gemini-3.1-flash-lite",
         config=types.GenerateContentConfig(
